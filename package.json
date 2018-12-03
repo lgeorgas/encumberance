@@ -5,6 +5,8 @@
   "dependencies": {
     "@material-ui/core": "^3.6.1",
     "@material-ui/icons": "^3.0.1",
+    "@material/fab": "^0.41.0",
+    "@material/react-fab": "^0.7.1",
     "material-ui-icons": "^1.0.0-beta.36",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
