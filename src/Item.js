@@ -1,13 +1,27 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
+import Checkbox from '@material-ui/core/Checkbox';
 import './css/Item.css';
 
+class Checkboxes extends React.Component {
+  state = {
+    checkedA: true,
+    checkedB: true,
+    checkedF: true,
+  };
+
+  handleChange = name => event => {
+    this.setState({ [name]: event.target.checked });
+  };
+
+}
 
 class Item extends React.Component {
       render(){
         return (
           <div className="item">
+          <Checkbox value = "checkedA" />
             <div className="item-name">
               <span>torch</span>
             </div>
