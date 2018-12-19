@@ -1,25 +1,19 @@
-import React, { Component } from 'react';
-import PropTypes from 'prop-types';
-import { withStyles } from '@material-ui/core/styles';
-import AddIcon from '@material-ui/icons/Add';
-import Fab from '@material-ui/core/Fab';
-import IconButton from '@material-ui/core/IconButton';
-import Tooltip from '@material-ui/core/Tooltip';
+import React from 'react';
 import {SortableContainer, SortableElement, arrayMove} from 'react-sortable-hoc';
 import FloatingActionButtons from './fab.js';
 import Item from './Item.js'
 import './css/ListItem.css';
 
-const styles = theme => ({
-  fab: {
-    margin: theme.spacing.unit * 2,
-  },
-  absolute: {
-    position: 'absolute',
-    bottom: theme.spacing.unit * 2,
-    right: theme.spacing.unit * 3,
-  },
-});
+// const styles = theme => ({
+//   fab: {
+//     margin: theme.spacing.unit * 2,
+//   },
+//   absolute: {
+//     position: 'absolute',
+//     bottom: theme.spacing.unit * 2,
+//     right: theme.spacing.unit * 3,
+//   },
+// });
 
 const SortableItem = SortableElement(({value}) =>
   <li>{value}</li>
