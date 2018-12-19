@@ -1,0 +1,12 @@
+.item {
+	background-color: red ;
+}
+
+.item li {
+	list-style: none;
+}
+
+
+.item-name, .item-weight, .total-weight, .item-qty {
+	display: inline-block;
+}

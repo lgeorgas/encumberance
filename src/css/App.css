@@ -5,3 +5,7 @@
 .App-root-1 .tabContent {
 	background-color: #edece1;
 }
+
+li {
+	list-style: none;
+}

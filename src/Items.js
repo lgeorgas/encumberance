@@ -6,7 +6,7 @@ import './css/Items.css';
 class Items extends React.Component {
       render(){
         return (
-          <div className="item">
+          <div className="items">
             <ListItem />
         </div>
           )
