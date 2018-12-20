@@ -7,6 +7,7 @@ import Tab from '@material-ui/core/Tab';
 import Typography from '@material-ui/core/Typography';
 import './css/App.css';
 import Items from './Items.js';
+import TemporaryDrawer from './MenuDrawer.js';
 
 function TabContainer(props){
   return (  
@@ -44,7 +45,8 @@ class App extends React.Component {
     return (
       <div className={classes.root}>
         <AppBar className="AppMenuBar" position="static">
-          <Tabs value={value} onChange={this.handleChange} centered>
+          <TemporaryDrawer></TemporaryDrawer>
+          <Tabs class = "TabsDiv" value={value} onChange={this.handleChange} centered>
             <Tab label="Character" disabled />
             <Tab label="Spells" disabled />
             <Tab label="Inventory" />

@@ -1,5 +1,7 @@
 .App-root-1 .AppMenuBar {
-  background-color: #303F9F;
+	background-color: #303F9F;
+	display: flex;
+	flex-direction: row;
 }
 
 .App-root-1 .tabContent {
